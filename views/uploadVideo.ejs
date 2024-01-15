@@ -1,0 +1,12 @@
+<%- include('../views/layout/header'); %>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Convert to Audio</h1>
+            <h2>Upload File...</h2>
+            <form action="/upload" enctype="multipart/form-data" method="post">
+                <input type="file" name="file">
+                <input type="submit" name="submit"/>
+            </form>            
+        </div>
+    </div>
+    <%- include('../views/layout/footer'); %>

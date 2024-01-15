@@ -1,0 +1,14 @@
+<%- include('../views/layout/header'); %>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">
+                <% if (output) { %>
+                    <p>
+                        <a href="/downloadAudioFile?filename=<%= output %>" download>Download Audio</a>
+                    </p>
+                    <% } %>
+            </h1>
+
+        </div>
+    </div>
+    <%- include('../views/layout/footer'); %>
